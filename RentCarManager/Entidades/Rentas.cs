@@ -14,8 +14,10 @@ namespace RentCarManager.Entidades
         public DateTime FechaRegistro { get; set; }
         public int Dias { get; set; }
         public DateTime FechaInicio { get; set; }
-        public DateTime FechaFinal { get; set; }
+        public DateTime FechaEntrega { get; set; }
+        public int VehiculoId { get; set; }
         public float Precio { get; set; }
+        public float Total { get; set; }
 
         public Rentas()
         {
@@ -27,8 +29,10 @@ namespace RentCarManager.Entidades
             FechaRegistro = DateTime.Now;
             Dias = 0;
             FechaInicio = DateTime.Now;
-            FechaFinal = DateTime.Now;
+            FechaEntrega = DateTime.Now;
+            VehiculoId = 0;
             Precio = 0;
+            Total = 0;
         }
     }
 }
