@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.ChasisTextBox = new System.Windows.Forms.TextBox();
             this.PrecioNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.ChasisLabel = new System.Windows.Forms.Label();
@@ -49,8 +50,10 @@
             this.VersionTextBox = new System.Windows.Forms.TextBox();
             this.EstadoComboBox = new System.Windows.Forms.ComboBox();
             this.AnoFabricacionNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.MyErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.PrecioNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AnoFabricacionNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MyErrorProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // ChasisTextBox
@@ -63,8 +66,14 @@
             // 
             // PrecioNumericUpDown
             // 
+            this.PrecioNumericUpDown.DecimalPlaces = 2;
             this.PrecioNumericUpDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PrecioNumericUpDown.Location = new System.Drawing.Point(110, 290);
+            this.PrecioNumericUpDown.Maximum = new decimal(new int[] {
+            999999999,
+            0,
+            0,
+            0});
             this.PrecioNumericUpDown.Name = "PrecioNumericUpDown";
             this.PrecioNumericUpDown.Size = new System.Drawing.Size(120, 22);
             this.PrecioNumericUpDown.TabIndex = 3;
@@ -168,6 +177,7 @@
             this.LimpiarButton.TabIndex = 13;
             this.LimpiarButton.Text = "Limpiar";
             this.LimpiarButton.UseVisualStyleBackColor = true;
+            this.LimpiarButton.Click += new System.EventHandler(this.LimpiarButton_Click);
             // 
             // GuardarButton
             // 
@@ -178,6 +188,7 @@
             this.GuardarButton.TabIndex = 14;
             this.GuardarButton.Text = "Guardar";
             this.GuardarButton.UseVisualStyleBackColor = true;
+            this.GuardarButton.Click += new System.EventHandler(this.GuardarButton_Click);
             // 
             // EliminarButton
             // 
@@ -188,6 +199,7 @@
             this.EliminarButton.TabIndex = 15;
             this.EliminarButton.Text = "Eliminar";
             this.EliminarButton.UseVisualStyleBackColor = true;
+            this.EliminarButton.Click += new System.EventHandler(this.EliminarButton_Click);
             // 
             // MatriculaTextBox
             // 
@@ -233,6 +245,11 @@
             // 
             this.EstadoComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EstadoComboBox.FormattingEnabled = true;
+            this.EstadoComboBox.Items.AddRange(new object[] {
+            "Disponible",
+            "Rentado",
+            "En reparacion",
+            "No disponible"});
             this.EstadoComboBox.Location = new System.Drawing.Point(154, 322);
             this.EstadoComboBox.Name = "EstadoComboBox";
             this.EstadoComboBox.Size = new System.Drawing.Size(121, 24);
@@ -242,9 +259,18 @@
             // 
             this.AnoFabricacionNumericUpDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AnoFabricacionNumericUpDown.Location = new System.Drawing.Point(149, 256);
+            this.AnoFabricacionNumericUpDown.Maximum = new decimal(new int[] {
+            3000,
+            0,
+            0,
+            0});
             this.AnoFabricacionNumericUpDown.Name = "AnoFabricacionNumericUpDown";
             this.AnoFabricacionNumericUpDown.Size = new System.Drawing.Size(120, 22);
             this.AnoFabricacionNumericUpDown.TabIndex = 22;
+            // 
+            // MyErrorProvider
+            // 
+            this.MyErrorProvider.ContainerControl = this;
             // 
             // rVehiculos
             // 
@@ -274,8 +300,10 @@
             this.Controls.Add(this.ChasisTextBox);
             this.Name = "rVehiculos";
             this.Text = "rVehiculos";
+            this.Load += new System.EventHandler(this.rVehiculos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PrecioNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AnoFabricacionNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MyErrorProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -303,5 +331,6 @@
         private System.Windows.Forms.TextBox VersionTextBox;
         private System.Windows.Forms.ComboBox EstadoComboBox;
         private System.Windows.Forms.NumericUpDown AnoFabricacionNumericUpDown;
+        private System.Windows.Forms.ErrorProvider MyErrorProvider;
     }
 }

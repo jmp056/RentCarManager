@@ -20,7 +20,7 @@ namespace RentCarManager
 
         private void registroDeVehiculosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            rVehiculos rV = new rVehiculos();
+            rVehiculos rV = new rVehiculos(0);
             rV.ShowDialog();
         }
 
