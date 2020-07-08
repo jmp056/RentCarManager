@@ -1,13 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RentCarManager.Entidades
 {
-    class Vehiculos
+    public class Vehiculos
     {
        [Key]
         public int VehiculoId { get; set; }

@@ -56,6 +56,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entidades\Rentas.cs" />
     <Compile Include="Entidades\Vehiculos.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
