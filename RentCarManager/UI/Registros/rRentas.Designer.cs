@@ -54,6 +54,7 @@
             this.TotalNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.Totallabel = new System.Windows.Forms.Label();
             this.SeleccionarButton = new System.Windows.Forms.Button();
+            this.EntregadoButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.AnoFabricacionNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DiasNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TotalNumericUpDown)).BeginInit();
@@ -300,11 +301,22 @@
             this.SeleccionarButton.TabIndex = 54;
             this.SeleccionarButton.UseVisualStyleBackColor = true;
             // 
+            // EntregadoButton
+            // 
+            this.EntregadoButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EntregadoButton.Location = new System.Drawing.Point(269, 274);
+            this.EntregadoButton.Name = "EntregadoButton";
+            this.EntregadoButton.Size = new System.Drawing.Size(42, 35);
+            this.EntregadoButton.TabIndex = 55;
+            this.EntregadoButton.Text = "Vehiculo Entregado";
+            this.EntregadoButton.UseVisualStyleBackColor = true;
+            // 
             // rRentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(486, 402);
+            this.Controls.Add(this.EntregadoButton);
             this.Controls.Add(this.SeleccionarButton);
             this.Controls.Add(this.TotalNumericUpDown);
             this.Controls.Add(this.Totallabel);
@@ -369,5 +381,6 @@
         private System.Windows.Forms.NumericUpDown TotalNumericUpDown;
         private System.Windows.Forms.Label Totallabel;
         private System.Windows.Forms.Button SeleccionarButton;
+        private System.Windows.Forms.Button EntregadoButton;
     }
 }
