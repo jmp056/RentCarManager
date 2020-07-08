@@ -13,7 +13,7 @@ namespace RentCarManager.Entidades
         public string Marca { get; set; }
         public string Modelo { get; set; }
         public string Version { get; set; }
-        public DateTime AnoFabricacion { get; set; }
+        public int AnoFabricacion { get; set; }
         public float Precio { get; set; }
         public int Estado { get; set; }
 
@@ -26,7 +26,7 @@ namespace RentCarManager.Entidades
             Marca = string.Empty;
             Modelo = string.Empty;
             Version = string.Empty;
-            AnoFabricacion = DateTime.Now;
+            AnoFabricacion = 0;
             Precio = 0;
             Estado = 0;
         }
