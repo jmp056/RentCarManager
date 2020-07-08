@@ -75,6 +75,12 @@
     <Compile Include="UI\Consultas\cRentas.Designer.cs">
       <DependentUpon>cRentas.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\Consultas\cVehiculos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Consultas\cVehiculos.Designer.cs">
+      <DependentUpon>cVehiculos.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\Registros\rRentas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +104,9 @@
     </Compile>
     <EmbeddedResource Include="UI\Consultas\cRentas.resx">
       <DependentUpon>cRentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Consultas\cVehiculos.resx">
+      <DependentUpon>cVehiculos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Registros\rRentas.resx">
       <DependentUpon>rRentas.cs</DependentUpon>
