@@ -31,6 +31,7 @@
             this.DataGridViewGroupBox = new System.Windows.Forms.GroupBox();
             this.VehiculosDataGridView = new System.Windows.Forms.DataGridView();
             this.ConsultaGroupBox = new System.Windows.Forms.GroupBox();
+            this.SeleccionarButton = new System.Windows.Forms.Button();
             this.HastaNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.DesdeNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.CriterioTextBox = new System.Windows.Forms.TextBox();
@@ -38,7 +39,6 @@
             this.DesdeLabel = new System.Windows.Forms.Label();
             this.FiltroComboBox = new System.Windows.Forms.ComboBox();
             this.FiltroLabel = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.DataGridViewGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.VehiculosDataGridView)).BeginInit();
             this.ConsultaGroupBox.SuspendLayout();
@@ -68,7 +68,7 @@
             // 
             // ConsultaGroupBox
             // 
-            this.ConsultaGroupBox.Controls.Add(this.button1);
+            this.ConsultaGroupBox.Controls.Add(this.SeleccionarButton);
             this.ConsultaGroupBox.Controls.Add(this.HastaNumericUpDown);
             this.ConsultaGroupBox.Controls.Add(this.DesdeNumericUpDown);
             this.ConsultaGroupBox.Controls.Add(this.CriterioTextBox);
@@ -81,6 +81,18 @@
             this.ConsultaGroupBox.Size = new System.Drawing.Size(162, 288);
             this.ConsultaGroupBox.TabIndex = 3;
             this.ConsultaGroupBox.TabStop = false;
+            // 
+            // SeleccionarButton
+            // 
+            this.SeleccionarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SeleccionarButton.Location = new System.Drawing.Point(10, 233);
+            this.SeleccionarButton.Name = "SeleccionarButton";
+            this.SeleccionarButton.Size = new System.Drawing.Size(130, 37);
+            this.SeleccionarButton.TabIndex = 36;
+            this.SeleccionarButton.Text = "Seleccionar";
+            this.SeleccionarButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.SeleccionarButton.UseVisualStyleBackColor = true;
+            this.SeleccionarButton.Click += new System.EventHandler(this.button1_Click);
             // 
             // HastaNumericUpDown
             // 
@@ -167,18 +179,6 @@
             this.FiltroLabel.TabIndex = 26;
             this.FiltroLabel.Text = "Filtro";
             // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(10, 233);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(130, 37);
-            this.button1.TabIndex = 36;
-            this.button1.Text = "Seleccionar";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // sVehiculos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -211,6 +211,6 @@
         private System.Windows.Forms.NumericUpDown HastaNumericUpDown;
         private System.Windows.Forms.NumericUpDown DesdeNumericUpDown;
         private System.Windows.Forms.DataGridView VehiculosDataGridView;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button SeleccionarButton;
     }
 }

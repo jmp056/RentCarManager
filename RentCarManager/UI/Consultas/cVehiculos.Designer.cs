@@ -39,6 +39,7 @@
             this.DesdeLabel = new System.Windows.Forms.Label();
             this.FiltroComboBox = new System.Windows.Forms.ComboBox();
             this.FiltroLabel = new System.Windows.Forms.Label();
+            this.SeleccionarButton = new System.Windows.Forms.Button();
             this.DataGridViewGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.VehiculosDataGridView)).BeginInit();
             this.ConsultaGroupBox.SuspendLayout();
@@ -51,7 +52,7 @@
             this.DataGridViewGroupBox.Controls.Add(this.VehiculosDataGridView);
             this.DataGridViewGroupBox.Location = new System.Drawing.Point(170, 0);
             this.DataGridViewGroupBox.Name = "DataGridViewGroupBox";
-            this.DataGridViewGroupBox.Size = new System.Drawing.Size(742, 235);
+            this.DataGridViewGroupBox.Size = new System.Drawing.Size(742, 285);
             this.DataGridViewGroupBox.TabIndex = 4;
             this.DataGridViewGroupBox.TabStop = false;
             // 
@@ -62,11 +63,13 @@
             this.VehiculosDataGridView.Name = "VehiculosDataGridView";
             this.VehiculosDataGridView.ReadOnly = true;
             this.VehiculosDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.VehiculosDataGridView.Size = new System.Drawing.Size(730, 219);
+            this.VehiculosDataGridView.Size = new System.Drawing.Size(730, 269);
             this.VehiculosDataGridView.TabIndex = 0;
+            this.VehiculosDataGridView.DoubleClick += new System.EventHandler(this.VehiculosDataGridView_DoubleClick);
             // 
             // ConsultaGroupBox
             // 
+            this.ConsultaGroupBox.Controls.Add(this.SeleccionarButton);
             this.ConsultaGroupBox.Controls.Add(this.HastaNumericUpDown);
             this.ConsultaGroupBox.Controls.Add(this.DesdeNumericUpDown);
             this.ConsultaGroupBox.Controls.Add(this.CriterioComboBox);
@@ -77,7 +80,7 @@
             this.ConsultaGroupBox.Controls.Add(this.FiltroLabel);
             this.ConsultaGroupBox.Location = new System.Drawing.Point(5, 0);
             this.ConsultaGroupBox.Name = "ConsultaGroupBox";
-            this.ConsultaGroupBox.Size = new System.Drawing.Size(162, 235);
+            this.ConsultaGroupBox.Size = new System.Drawing.Size(162, 285);
             this.ConsultaGroupBox.TabIndex = 3;
             this.ConsultaGroupBox.TabStop = false;
             // 
@@ -183,11 +186,23 @@
             this.FiltroLabel.TabIndex = 26;
             this.FiltroLabel.Text = "Filtro";
             // 
+            // SeleccionarButton
+            // 
+            this.SeleccionarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SeleccionarButton.Location = new System.Drawing.Point(7, 232);
+            this.SeleccionarButton.Name = "SeleccionarButton";
+            this.SeleccionarButton.Size = new System.Drawing.Size(130, 37);
+            this.SeleccionarButton.TabIndex = 37;
+            this.SeleccionarButton.Text = "Seleccionar";
+            this.SeleccionarButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.SeleccionarButton.UseVisualStyleBackColor = true;
+            this.SeleccionarButton.Click += new System.EventHandler(this.SeleccionarButton_Click);
+            // 
             // cVehiculos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(918, 243);
+            this.ClientSize = new System.Drawing.Size(918, 297);
             this.Controls.Add(this.DataGridViewGroupBox);
             this.Controls.Add(this.ConsultaGroupBox);
             this.Name = "cVehiculos";
@@ -216,5 +231,6 @@
         private System.Windows.Forms.NumericUpDown DesdeNumericUpDown;
         private System.Windows.Forms.ComboBox CriterioComboBox;
         private System.Windows.Forms.DataGridView VehiculosDataGridView;
+        private System.Windows.Forms.Button SeleccionarButton;
     }
 }

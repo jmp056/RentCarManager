@@ -1,4 +1,5 @@
 ﻿using RentCarManager.Entidades;
+using RentCarManager.UI.Registros;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -198,6 +199,32 @@ namespace RentCarManager.UI.Consultas
         private void HastaNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
             Buscar();
+        }
+
+        private void VehiculosDataGridView_DoubleClick(object sender, EventArgs e)
+        {
+            if (ListadoVehiculos.Count > 0)
+            {
+                if (VehiculosDataGridView.CurrentRow.Index >= 0)
+                {
+                    int IdVehiculoSleccionado = Convert.ToInt32(VehiculosDataGridView.CurrentRow.Cells["VehiculoId"].Value);
+                    rVehiculos rV = new rVehiculos(IdVehiculoSleccionado);
+                    rV.ShowDialog();
+                }
+            }
+        }
+
+        private void SeleccionarButton_Click(object sender, EventArgs e)
+        {
+            if (ListadoVehiculos.Count > 0)
+            {
+                if (VehiculosDataGridView.CurrentRow.Index >= 0)
+                {
+                    int IdVehiculoSleccionado = Convert.ToInt32(VehiculosDataGridView.CurrentRow.Cells["VehiculoId"].Value);
+                    rVehiculos rV = new rVehiculos(IdVehiculoSleccionado);
+                    rV.ShowDialog();
+                }
+            }
         }
     }
 }
