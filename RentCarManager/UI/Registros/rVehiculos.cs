@@ -21,6 +21,7 @@ namespace RentCarManager.UI.Registros
             MatriculaTextBox.Text = string.Empty;
             PlacaTextBox.Text = string.Empty;
             MarcaTextBox.Text = string.Empty;
+            ModeloTextBox.Text = string.Empty;
             VersionTextBox.Text = string.Empty;
             AnoFabricacionNumericUpDown.Value = Convert.ToInt32(DateTime.Now.Year);
             PrecioNumericUpDown.Value = 0;
@@ -36,6 +37,7 @@ namespace RentCarManager.UI.Registros
             Vehiculo.Matricula = MatriculaTextBox.Text;
             Vehiculo.Placa = PlacaTextBox.Text;
             Vehiculo.Marca = MarcaTextBox.Text;
+            Vehiculo.Modelo = ModeloTextBox.Text;
             Vehiculo.Version = VersionTextBox.Text;
             Vehiculo.AnoFabricacion = Convert.ToInt32(AnoFabricacionNumericUpDown.Value);
             Vehiculo.Precio = Convert.ToSingle(PrecioNumericUpDown.Value);
@@ -52,6 +54,7 @@ namespace RentCarManager.UI.Registros
             MatriculaTextBox.Text = Vehiculo.Matricula;
             PlacaTextBox.Text = Vehiculo.Placa;
             MarcaTextBox.Text = Vehiculo.Marca;
+            ModeloTextBox.Text = Vehiculo.Modelo;
             VersionTextBox.Text = Vehiculo.Version;
             AnoFabricacionNumericUpDown.Value = Convert.ToInt32(Vehiculo.AnoFabricacion);
             PrecioNumericUpDown.Value = Convert.ToDecimal(Vehiculo.Precio);
