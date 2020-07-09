@@ -103,6 +103,7 @@
             this.GuardarButton.TabIndex = 35;
             this.GuardarButton.Text = "Guardar";
             this.GuardarButton.UseVisualStyleBackColor = true;
+            this.GuardarButton.Click += new System.EventHandler(this.GuardarButton_Click);
             // 
             // LimpiarButton
             // 

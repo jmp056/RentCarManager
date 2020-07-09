@@ -35,5 +35,15 @@ namespace RentCarManager
             cVehiculos cV = new cVehiculos();
             cV.ShowDialog();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            sVehiculos sV = new sVehiculos();
+            if (sV.ShowDialog() == DialogResult.OK)
+            {
+                int numero = sV.IdVehiculoSeleccionado;
+            }
+
+        }
     }
 }

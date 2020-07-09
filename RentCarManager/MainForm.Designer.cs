@@ -32,11 +32,12 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.registrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.consultasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registroDeRentasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registroDeVehiculosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultaDeRentasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultaDeVehiculosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,15 +66,6 @@
             this.registrosToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
             this.registrosToolStripMenuItem.Text = "Registros";
             // 
-            // consultasToolStripMenuItem
-            // 
-            this.consultasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.consultaDeRentasToolStripMenuItem,
-            this.consultaDeVehiculosToolStripMenuItem});
-            this.consultasToolStripMenuItem.Name = "consultasToolStripMenuItem";
-            this.consultasToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
-            this.consultasToolStripMenuItem.Text = "Consultas";
-            // 
             // registroDeRentasToolStripMenuItem
             // 
             this.registroDeRentasToolStripMenuItem.Name = "registroDeRentasToolStripMenuItem";
@@ -87,6 +79,15 @@
             this.registroDeVehiculosToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
             this.registroDeVehiculosToolStripMenuItem.Text = "Registro de vehiculos";
             this.registroDeVehiculosToolStripMenuItem.Click += new System.EventHandler(this.registroDeVehiculosToolStripMenuItem_Click);
+            // 
+            // consultasToolStripMenuItem
+            // 
+            this.consultasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.consultaDeRentasToolStripMenuItem,
+            this.consultaDeVehiculosToolStripMenuItem});
+            this.consultasToolStripMenuItem.Name = "consultasToolStripMenuItem";
+            this.consultasToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.consultasToolStripMenuItem.Text = "Consultas";
             // 
             // consultaDeRentasToolStripMenuItem
             // 
@@ -102,11 +103,22 @@
             this.consultaDeVehiculosToolStripMenuItem.Text = "Consulta de vehiculos";
             this.consultaDeVehiculosToolStripMenuItem.Click += new System.EventHandler(this.consultaDeVehiculosToolStripMenuItem_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(186, 107);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm";
@@ -128,6 +140,7 @@
         private System.Windows.Forms.ToolStripMenuItem consultasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultaDeRentasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultaDeVehiculosToolStripMenuItem;
+        private System.Windows.Forms.Button button1;
     }
 }
 

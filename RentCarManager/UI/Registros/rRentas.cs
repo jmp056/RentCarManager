@@ -16,5 +16,28 @@ namespace RentCarManager.UI.Registros
         {
             InitializeComponent();
         }
+
+        //private void VerProductosButton_Click(object sender, EventArgs e) // Clic al boton ver productos
+        //{
+        //    try
+        //    {
+        //        SeleccionProducto TraeProducto = new SeleccionProducto();
+        //        if (TraeProducto.ShowDialog() == DialogResult.OK)
+        //        {
+
+        //            Producto = BuscaProducto(TraeProducto.IdProductoSeleccionado);
+        //            ProductoTextBox.Text = Producto.Descripcion;
+        //            CantidadNumericUpDown.Focus();
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show(ex.Message, "Error, contacte soporte e infórmele sobre este problema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        //    }
+        //}
+        private void GuardarButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
