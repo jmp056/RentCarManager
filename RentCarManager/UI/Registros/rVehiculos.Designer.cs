@@ -59,30 +59,30 @@
             // ChasisTextBox
             // 
             this.ChasisTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ChasisTextBox.Location = new System.Drawing.Point(121, 28);
+            this.ChasisTextBox.Location = new System.Drawing.Point(110, 23);
             this.ChasisTextBox.Name = "ChasisTextBox";
-            this.ChasisTextBox.Size = new System.Drawing.Size(100, 22);
+            this.ChasisTextBox.Size = new System.Drawing.Size(136, 22);
             this.ChasisTextBox.TabIndex = 1;
             // 
             // PrecioNumericUpDown
             // 
             this.PrecioNumericUpDown.DecimalPlaces = 2;
             this.PrecioNumericUpDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PrecioNumericUpDown.Location = new System.Drawing.Point(110, 290);
+            this.PrecioNumericUpDown.Location = new System.Drawing.Point(365, 128);
             this.PrecioNumericUpDown.Maximum = new decimal(new int[] {
             999999999,
             0,
             0,
             0});
             this.PrecioNumericUpDown.Name = "PrecioNumericUpDown";
-            this.PrecioNumericUpDown.Size = new System.Drawing.Size(120, 22);
+            this.PrecioNumericUpDown.Size = new System.Drawing.Size(136, 22);
             this.PrecioNumericUpDown.TabIndex = 3;
             // 
             // ChasisLabel
             // 
             this.ChasisLabel.AutoSize = true;
             this.ChasisLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ChasisLabel.Location = new System.Drawing.Point(28, 28);
+            this.ChasisLabel.Location = new System.Drawing.Point(20, 25);
             this.ChasisLabel.Name = "ChasisLabel";
             this.ChasisLabel.Size = new System.Drawing.Size(83, 16);
             this.ChasisLabel.TabIndex = 4;
@@ -92,7 +92,7 @@
             // 
             this.MatriculaLabel.AutoSize = true;
             this.MatriculaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MatriculaLabel.Location = new System.Drawing.Point(16, 64);
+            this.MatriculaLabel.Location = new System.Drawing.Point(275, 25);
             this.MatriculaLabel.Name = "MatriculaLabel";
             this.MatriculaLabel.Size = new System.Drawing.Size(71, 16);
             this.MatriculaLabel.TabIndex = 5;
@@ -102,7 +102,7 @@
             // 
             this.PlacaLabel.AutoSize = true;
             this.PlacaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PlacaLabel.Location = new System.Drawing.Point(16, 104);
+            this.PlacaLabel.Location = new System.Drawing.Point(20, 60);
             this.PlacaLabel.Name = "PlacaLabel";
             this.PlacaLabel.Size = new System.Drawing.Size(48, 16);
             this.PlacaLabel.TabIndex = 6;
@@ -112,7 +112,7 @@
             // 
             this.MarcaLabel.AutoSize = true;
             this.MarcaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MarcaLabel.Location = new System.Drawing.Point(28, 138);
+            this.MarcaLabel.Location = new System.Drawing.Point(275, 60);
             this.MarcaLabel.Name = "MarcaLabel";
             this.MarcaLabel.Size = new System.Drawing.Size(51, 16);
             this.MarcaLabel.TabIndex = 7;
@@ -122,7 +122,7 @@
             // 
             this.ModeloLabel.AutoSize = true;
             this.ModeloLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ModeloLabel.Location = new System.Drawing.Point(23, 178);
+            this.ModeloLabel.Location = new System.Drawing.Point(20, 95);
             this.ModeloLabel.Name = "ModeloLabel";
             this.ModeloLabel.Size = new System.Drawing.Size(60, 16);
             this.ModeloLabel.TabIndex = 8;
@@ -132,7 +132,7 @@
             // 
             this.VersionLabel.AutoSize = true;
             this.VersionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VersionLabel.Location = new System.Drawing.Point(25, 216);
+            this.VersionLabel.Location = new System.Drawing.Point(275, 95);
             this.VersionLabel.Name = "VersionLabel";
             this.VersionLabel.Size = new System.Drawing.Size(61, 16);
             this.VersionLabel.TabIndex = 9;
@@ -142,17 +142,17 @@
             // 
             this.AnoFabricacionLabel.AutoSize = true;
             this.AnoFabricacionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AnoFabricacionLabel.Location = new System.Drawing.Point(10, 256);
+            this.AnoFabricacionLabel.Location = new System.Drawing.Point(20, 130);
             this.AnoFabricacionLabel.Name = "AnoFabricacionLabel";
-            this.AnoFabricacionLabel.Size = new System.Drawing.Size(138, 16);
+            this.AnoFabricacionLabel.Size = new System.Drawing.Size(35, 16);
             this.AnoFabricacionLabel.TabIndex = 10;
-            this.AnoFabricacionLabel.Text = "Año de fabricación";
+            this.AnoFabricacionLabel.Text = "Año";
             // 
             // PrecioLabel
             // 
             this.PrecioLabel.AutoSize = true;
             this.PrecioLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PrecioLabel.Location = new System.Drawing.Point(34, 290);
+            this.PrecioLabel.Location = new System.Drawing.Point(275, 130);
             this.PrecioLabel.Name = "PrecioLabel";
             this.PrecioLabel.Size = new System.Drawing.Size(53, 16);
             this.PrecioLabel.TabIndex = 11;
@@ -162,7 +162,7 @@
             // 
             this.EstadoLabel.AutoSize = true;
             this.EstadoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EstadoLabel.Location = new System.Drawing.Point(34, 328);
+            this.EstadoLabel.Location = new System.Drawing.Point(20, 163);
             this.EstadoLabel.Name = "EstadoLabel";
             this.EstadoLabel.Size = new System.Drawing.Size(57, 16);
             this.EstadoLabel.TabIndex = 12;
@@ -171,7 +171,7 @@
             // LimpiarButton
             // 
             this.LimpiarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LimpiarButton.Location = new System.Drawing.Point(37, 351);
+            this.LimpiarButton.Location = new System.Drawing.Point(23, 208);
             this.LimpiarButton.Name = "LimpiarButton";
             this.LimpiarButton.Size = new System.Drawing.Size(100, 35);
             this.LimpiarButton.TabIndex = 13;
@@ -182,7 +182,7 @@
             // GuardarButton
             // 
             this.GuardarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GuardarButton.Location = new System.Drawing.Point(169, 351);
+            this.GuardarButton.Location = new System.Drawing.Point(213, 208);
             this.GuardarButton.Name = "GuardarButton";
             this.GuardarButton.Size = new System.Drawing.Size(100, 35);
             this.GuardarButton.TabIndex = 14;
@@ -193,7 +193,7 @@
             // EliminarButton
             // 
             this.EliminarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EliminarButton.Location = new System.Drawing.Point(336, 351);
+            this.EliminarButton.Location = new System.Drawing.Point(401, 208);
             this.EliminarButton.Name = "EliminarButton";
             this.EliminarButton.Size = new System.Drawing.Size(100, 35);
             this.EliminarButton.TabIndex = 15;
@@ -204,41 +204,41 @@
             // MatriculaTextBox
             // 
             this.MatriculaTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MatriculaTextBox.Location = new System.Drawing.Point(110, 61);
+            this.MatriculaTextBox.Location = new System.Drawing.Point(365, 23);
             this.MatriculaTextBox.Name = "MatriculaTextBox";
-            this.MatriculaTextBox.Size = new System.Drawing.Size(100, 22);
+            this.MatriculaTextBox.Size = new System.Drawing.Size(136, 22);
             this.MatriculaTextBox.TabIndex = 16;
             // 
             // PlacaTextBox
             // 
             this.PlacaTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PlacaTextBox.Location = new System.Drawing.Point(94, 104);
+            this.PlacaTextBox.Location = new System.Drawing.Point(110, 58);
             this.PlacaTextBox.Name = "PlacaTextBox";
-            this.PlacaTextBox.Size = new System.Drawing.Size(100, 22);
+            this.PlacaTextBox.Size = new System.Drawing.Size(136, 22);
             this.PlacaTextBox.TabIndex = 17;
             // 
             // MarcaTextBox
             // 
             this.MarcaTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MarcaTextBox.Location = new System.Drawing.Point(110, 135);
+            this.MarcaTextBox.Location = new System.Drawing.Point(365, 58);
             this.MarcaTextBox.Name = "MarcaTextBox";
-            this.MarcaTextBox.Size = new System.Drawing.Size(100, 22);
+            this.MarcaTextBox.Size = new System.Drawing.Size(136, 22);
             this.MarcaTextBox.TabIndex = 18;
             // 
             // ModeloTextBox
             // 
             this.ModeloTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ModeloTextBox.Location = new System.Drawing.Point(110, 175);
+            this.ModeloTextBox.Location = new System.Drawing.Point(110, 93);
             this.ModeloTextBox.Name = "ModeloTextBox";
-            this.ModeloTextBox.Size = new System.Drawing.Size(100, 22);
+            this.ModeloTextBox.Size = new System.Drawing.Size(136, 22);
             this.ModeloTextBox.TabIndex = 19;
             // 
             // VersionTextBox
             // 
             this.VersionTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VersionTextBox.Location = new System.Drawing.Point(121, 216);
+            this.VersionTextBox.Location = new System.Drawing.Point(365, 93);
             this.VersionTextBox.Name = "VersionTextBox";
-            this.VersionTextBox.Size = new System.Drawing.Size(100, 22);
+            this.VersionTextBox.Size = new System.Drawing.Size(136, 22);
             this.VersionTextBox.TabIndex = 20;
             // 
             // EstadoComboBox
@@ -250,22 +250,22 @@
             "Rentado",
             "En reparacion",
             "No disponible"});
-            this.EstadoComboBox.Location = new System.Drawing.Point(154, 322);
+            this.EstadoComboBox.Location = new System.Drawing.Point(110, 161);
             this.EstadoComboBox.Name = "EstadoComboBox";
-            this.EstadoComboBox.Size = new System.Drawing.Size(121, 24);
+            this.EstadoComboBox.Size = new System.Drawing.Size(136, 24);
             this.EstadoComboBox.TabIndex = 21;
             // 
             // AnoFabricacionNumericUpDown
             // 
             this.AnoFabricacionNumericUpDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AnoFabricacionNumericUpDown.Location = new System.Drawing.Point(149, 256);
+            this.AnoFabricacionNumericUpDown.Location = new System.Drawing.Point(110, 128);
             this.AnoFabricacionNumericUpDown.Maximum = new decimal(new int[] {
             3000,
             0,
             0,
             0});
             this.AnoFabricacionNumericUpDown.Name = "AnoFabricacionNumericUpDown";
-            this.AnoFabricacionNumericUpDown.Size = new System.Drawing.Size(120, 22);
+            this.AnoFabricacionNumericUpDown.Size = new System.Drawing.Size(136, 22);
             this.AnoFabricacionNumericUpDown.TabIndex = 22;
             // 
             // MyErrorProvider
@@ -276,7 +276,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(464, 407);
+            this.ClientSize = new System.Drawing.Size(534, 264);
             this.Controls.Add(this.AnoFabricacionNumericUpDown);
             this.Controls.Add(this.EstadoComboBox);
             this.Controls.Add(this.VersionTextBox);
