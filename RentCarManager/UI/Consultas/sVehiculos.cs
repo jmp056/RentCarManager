@@ -37,27 +37,12 @@ namespace RentCarManager.UI.Consultas
                 vC.Version = dataReader["Version"].ToString();
                 vC.AnoFabricacion = Convert.ToInt32(dataReader["AnoFabricacion"].ToString());
                 vC.Placa = dataReader["Placa"].ToString();
-                switch (Convert.ToInt32(dataReader["Estado"].ToString()))
-                {
-                    case 0: 
-                        vC.Estado = "Disponible";
-                        break;
-
-                    case 1:
-                        vC.Estado = "Rentado";
-                        break;
-
-                    case 2:
-                        vC.Estado = "En reparacion";
-                        break;
-
-                    case 3:
-                        vC.Estado = "No disponible";
-                        break;
-                }
                 vC.Precio = Convert.ToSingle(dataReader["Precio"].ToString());
-
-                Lista.Add(vC);
+                if (Convert.ToInt32(dataReader["Estado"].ToString()) == 0)
+                {
+                    vC.Estado = "Disponible";
+                    Lista.Add(vC);
+                }
             }
 
             dataReader.Close();
@@ -69,7 +54,6 @@ namespace RentCarManager.UI.Consultas
         private void Buscar()
         {
             ListadoVehiculos = CargaLista();
-            ListadoVehiculos = ListadoVehiculos.Where(l => l.Estado.ToUpper().Contains("DISPONIBLE")).ToList();
 
             switch (FiltroComboBox.SelectedIndex)
             {
