@@ -298,8 +298,10 @@
             this.Controls.Add(this.ChasisLabel);
             this.Controls.Add(this.PrecioNumericUpDown);
             this.Controls.Add(this.ChasisTextBox);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "rVehiculos";
-            this.Text = "rVehiculos";
+            this.Text = "Registro de vehiculos";
             this.Load += new System.EventHandler(this.rVehiculos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PrecioNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AnoFabricacionNumericUpDown)).EndInit();

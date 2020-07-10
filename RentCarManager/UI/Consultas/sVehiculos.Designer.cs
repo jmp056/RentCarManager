@@ -90,7 +90,6 @@
             this.SeleccionarButton.Size = new System.Drawing.Size(130, 37);
             this.SeleccionarButton.TabIndex = 36;
             this.SeleccionarButton.Text = "Seleccionar";
-            this.SeleccionarButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.SeleccionarButton.UseVisualStyleBackColor = true;
             this.SeleccionarButton.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -186,8 +185,10 @@
             this.ClientSize = new System.Drawing.Size(819, 295);
             this.Controls.Add(this.DataGridViewGroupBox);
             this.Controls.Add(this.ConsultaGroupBox);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "sVehiculos";
-            this.Text = "cVehiculos";
+            this.Text = "Consulta de Vehiculos";
             this.Activated += new System.EventHandler(this.cVehiculos_Activated);
             this.DataGridViewGroupBox.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.VehiculosDataGridView)).EndInit();
