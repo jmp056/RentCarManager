@@ -243,6 +243,7 @@
             // 
             // EstadoComboBox
             // 
+            this.EstadoComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.EstadoComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EstadoComboBox.FormattingEnabled = true;
             this.EstadoComboBox.Items.AddRange(new object[] {
@@ -301,6 +302,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "rVehiculos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Registro de vehiculos";
             this.Load += new System.EventHandler(this.rVehiculos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PrecioNumericUpDown)).EndInit();

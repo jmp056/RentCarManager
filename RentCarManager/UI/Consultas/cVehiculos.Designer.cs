@@ -31,6 +31,7 @@
             this.DataGridViewGroupBox = new System.Windows.Forms.GroupBox();
             this.VehiculosDataGridView = new System.Windows.Forms.DataGridView();
             this.ConsultaGroupBox = new System.Windows.Forms.GroupBox();
+            this.SeleccionarButton = new System.Windows.Forms.Button();
             this.HastaNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.DesdeNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.CriterioComboBox = new System.Windows.Forms.ComboBox();
@@ -39,7 +40,6 @@
             this.DesdeLabel = new System.Windows.Forms.Label();
             this.FiltroComboBox = new System.Windows.Forms.ComboBox();
             this.FiltroLabel = new System.Windows.Forms.Label();
-            this.SeleccionarButton = new System.Windows.Forms.Button();
             this.DataGridViewGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.VehiculosDataGridView)).BeginInit();
             this.ConsultaGroupBox.SuspendLayout();
@@ -83,6 +83,17 @@
             this.ConsultaGroupBox.Size = new System.Drawing.Size(162, 285);
             this.ConsultaGroupBox.TabIndex = 3;
             this.ConsultaGroupBox.TabStop = false;
+            // 
+            // SeleccionarButton
+            // 
+            this.SeleccionarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SeleccionarButton.Location = new System.Drawing.Point(7, 232);
+            this.SeleccionarButton.Name = "SeleccionarButton";
+            this.SeleccionarButton.Size = new System.Drawing.Size(130, 37);
+            this.SeleccionarButton.TabIndex = 37;
+            this.SeleccionarButton.Text = "Seleccionar";
+            this.SeleccionarButton.UseVisualStyleBackColor = true;
+            this.SeleccionarButton.Click += new System.EventHandler(this.SeleccionarButton_Click);
             // 
             // HastaNumericUpDown
             // 
@@ -186,18 +197,6 @@
             this.FiltroLabel.TabIndex = 26;
             this.FiltroLabel.Text = "Filtro";
             // 
-            // SeleccionarButton
-            // 
-            this.SeleccionarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SeleccionarButton.Location = new System.Drawing.Point(7, 232);
-            this.SeleccionarButton.Name = "SeleccionarButton";
-            this.SeleccionarButton.Size = new System.Drawing.Size(130, 37);
-            this.SeleccionarButton.TabIndex = 37;
-            this.SeleccionarButton.Text = "Seleccionar";
-            this.SeleccionarButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.SeleccionarButton.UseVisualStyleBackColor = true;
-            this.SeleccionarButton.Click += new System.EventHandler(this.SeleccionarButton_Click);
-            // 
             // cVehiculos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -205,8 +204,11 @@
             this.ClientSize = new System.Drawing.Size(918, 297);
             this.Controls.Add(this.DataGridViewGroupBox);
             this.Controls.Add(this.ConsultaGroupBox);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "cVehiculos";
-            this.Text = "cVehiculos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "Consulta de Vehiculos";
             this.Activated += new System.EventHandler(this.cVehiculos_Activated);
             this.DataGridViewGroupBox.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.VehiculosDataGridView)).EndInit();

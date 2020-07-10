@@ -188,7 +188,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "sVehiculos";
-            this.Text = "Consulta de Vehiculos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "Seleccion de Vehiculo";
             this.Activated += new System.EventHandler(this.cVehiculos_Activated);
             this.DataGridViewGroupBox.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.VehiculosDataGridView)).EndInit();
