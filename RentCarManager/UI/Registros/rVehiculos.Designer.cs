@@ -62,7 +62,7 @@
             this.ChasisTextBox.Location = new System.Drawing.Point(110, 23);
             this.ChasisTextBox.Name = "ChasisTextBox";
             this.ChasisTextBox.Size = new System.Drawing.Size(136, 22);
-            this.ChasisTextBox.TabIndex = 1;
+            this.ChasisTextBox.TabIndex = 5;
             // 
             // PrecioNumericUpDown
             // 
@@ -76,7 +76,7 @@
             0});
             this.PrecioNumericUpDown.Name = "PrecioNumericUpDown";
             this.PrecioNumericUpDown.Size = new System.Drawing.Size(136, 22);
-            this.PrecioNumericUpDown.TabIndex = 3;
+            this.PrecioNumericUpDown.TabIndex = 40;
             // 
             // ChasisLabel
             // 
@@ -174,7 +174,7 @@
             this.LimpiarButton.Location = new System.Drawing.Point(23, 208);
             this.LimpiarButton.Name = "LimpiarButton";
             this.LimpiarButton.Size = new System.Drawing.Size(100, 35);
-            this.LimpiarButton.TabIndex = 13;
+            this.LimpiarButton.TabIndex = 55;
             this.LimpiarButton.Text = "Limpiar";
             this.LimpiarButton.UseVisualStyleBackColor = true;
             this.LimpiarButton.Click += new System.EventHandler(this.LimpiarButton_Click);
@@ -185,7 +185,7 @@
             this.GuardarButton.Location = new System.Drawing.Point(213, 208);
             this.GuardarButton.Name = "GuardarButton";
             this.GuardarButton.Size = new System.Drawing.Size(100, 35);
-            this.GuardarButton.TabIndex = 14;
+            this.GuardarButton.TabIndex = 50;
             this.GuardarButton.Text = "Guardar";
             this.GuardarButton.UseVisualStyleBackColor = true;
             this.GuardarButton.Click += new System.EventHandler(this.GuardarButton_Click);
@@ -196,7 +196,7 @@
             this.EliminarButton.Location = new System.Drawing.Point(401, 208);
             this.EliminarButton.Name = "EliminarButton";
             this.EliminarButton.Size = new System.Drawing.Size(100, 35);
-            this.EliminarButton.TabIndex = 15;
+            this.EliminarButton.TabIndex = 60;
             this.EliminarButton.Text = "Eliminar";
             this.EliminarButton.UseVisualStyleBackColor = true;
             this.EliminarButton.Click += new System.EventHandler(this.EliminarButton_Click);
@@ -207,7 +207,7 @@
             this.MatriculaTextBox.Location = new System.Drawing.Point(365, 23);
             this.MatriculaTextBox.Name = "MatriculaTextBox";
             this.MatriculaTextBox.Size = new System.Drawing.Size(136, 22);
-            this.MatriculaTextBox.TabIndex = 16;
+            this.MatriculaTextBox.TabIndex = 10;
             // 
             // PlacaTextBox
             // 
@@ -215,7 +215,7 @@
             this.PlacaTextBox.Location = new System.Drawing.Point(110, 58);
             this.PlacaTextBox.Name = "PlacaTextBox";
             this.PlacaTextBox.Size = new System.Drawing.Size(136, 22);
-            this.PlacaTextBox.TabIndex = 17;
+            this.PlacaTextBox.TabIndex = 15;
             // 
             // MarcaTextBox
             // 
@@ -223,7 +223,7 @@
             this.MarcaTextBox.Location = new System.Drawing.Point(365, 58);
             this.MarcaTextBox.Name = "MarcaTextBox";
             this.MarcaTextBox.Size = new System.Drawing.Size(136, 22);
-            this.MarcaTextBox.TabIndex = 18;
+            this.MarcaTextBox.TabIndex = 20;
             // 
             // ModeloTextBox
             // 
@@ -231,7 +231,7 @@
             this.ModeloTextBox.Location = new System.Drawing.Point(110, 93);
             this.ModeloTextBox.Name = "ModeloTextBox";
             this.ModeloTextBox.Size = new System.Drawing.Size(136, 22);
-            this.ModeloTextBox.TabIndex = 19;
+            this.ModeloTextBox.TabIndex = 25;
             // 
             // VersionTextBox
             // 
@@ -239,7 +239,7 @@
             this.VersionTextBox.Location = new System.Drawing.Point(365, 93);
             this.VersionTextBox.Name = "VersionTextBox";
             this.VersionTextBox.Size = new System.Drawing.Size(136, 22);
-            this.VersionTextBox.TabIndex = 20;
+            this.VersionTextBox.TabIndex = 30;
             // 
             // EstadoComboBox
             // 
@@ -254,7 +254,7 @@
             this.EstadoComboBox.Location = new System.Drawing.Point(110, 161);
             this.EstadoComboBox.Name = "EstadoComboBox";
             this.EstadoComboBox.Size = new System.Drawing.Size(136, 24);
-            this.EstadoComboBox.TabIndex = 21;
+            this.EstadoComboBox.TabIndex = 45;
             // 
             // AnoFabricacionNumericUpDown
             // 
@@ -267,7 +267,7 @@
             0});
             this.AnoFabricacionNumericUpDown.Name = "AnoFabricacionNumericUpDown";
             this.AnoFabricacionNumericUpDown.Size = new System.Drawing.Size(136, 22);
-            this.AnoFabricacionNumericUpDown.TabIndex = 22;
+            this.AnoFabricacionNumericUpDown.TabIndex = 35;
             // 
             // MyErrorProvider
             // 

@@ -81,7 +81,7 @@
             0});
             this.PrecioNumericUpDown.Name = "PrecioNumericUpDown";
             this.PrecioNumericUpDown.Size = new System.Drawing.Size(147, 22);
-            this.PrecioNumericUpDown.TabIndex = 43;
+            this.PrecioNumericUpDown.TabIndex = 100;
             this.PrecioNumericUpDown.ValueChanged += new System.EventHandler(this.PrecioNumericUpDown_ValueChanged);
             // 
             // VehiculoTextBox
@@ -91,7 +91,7 @@
             this.VehiculoTextBox.Location = new System.Drawing.Point(80, 88);
             this.VehiculoTextBox.Name = "VehiculoTextBox";
             this.VehiculoTextBox.Size = new System.Drawing.Size(217, 22);
-            this.VehiculoTextBox.TabIndex = 40;
+            this.VehiculoTextBox.TabIndex = 140;
             // 
             // DireccionTextBox
             // 
@@ -99,7 +99,7 @@
             this.DireccionTextBox.Location = new System.Drawing.Point(105, 58);
             this.DireccionTextBox.Name = "DireccionTextBox";
             this.DireccionTextBox.Size = new System.Drawing.Size(232, 22);
-            this.DireccionTextBox.TabIndex = 39;
+            this.DireccionTextBox.TabIndex = 30;
             // 
             // EliminarButton
             // 
@@ -107,7 +107,7 @@
             this.EliminarButton.Location = new System.Drawing.Point(398, 280);
             this.EliminarButton.Name = "EliminarButton";
             this.EliminarButton.Size = new System.Drawing.Size(100, 35);
-            this.EliminarButton.TabIndex = 36;
+            this.EliminarButton.TabIndex = 130;
             this.EliminarButton.Text = "Eliminar";
             this.EliminarButton.UseVisualStyleBackColor = true;
             this.EliminarButton.Click += new System.EventHandler(this.EliminarButton_Click);
@@ -118,7 +118,7 @@
             this.GuardarButton.Location = new System.Drawing.Point(217, 280);
             this.GuardarButton.Name = "GuardarButton";
             this.GuardarButton.Size = new System.Drawing.Size(100, 35);
-            this.GuardarButton.TabIndex = 35;
+            this.GuardarButton.TabIndex = 110;
             this.GuardarButton.Text = "Guardar";
             this.GuardarButton.UseVisualStyleBackColor = true;
             this.GuardarButton.Click += new System.EventHandler(this.GuardarButton_Click);
@@ -129,7 +129,7 @@
             this.LimpiarButton.Location = new System.Drawing.Point(28, 280);
             this.LimpiarButton.Name = "LimpiarButton";
             this.LimpiarButton.Size = new System.Drawing.Size(100, 35);
-            this.LimpiarButton.TabIndex = 34;
+            this.LimpiarButton.TabIndex = 120;
             this.LimpiarButton.Text = "Limpiar";
             this.LimpiarButton.UseVisualStyleBackColor = true;
             this.LimpiarButton.Click += new System.EventHandler(this.LimpiarButton_Click);
@@ -215,7 +215,7 @@
             0});
             this.DiasNumericUpDown.Name = "DiasNumericUpDown";
             this.DiasNumericUpDown.Size = new System.Drawing.Size(120, 22);
-            this.DiasNumericUpDown.TabIndex = 24;
+            this.DiasNumericUpDown.TabIndex = 60;
             this.DiasNumericUpDown.ValueChanged += new System.EventHandler(this.DiasNumericUpDown_ValueChanged);
             // 
             // NombreTextBox
@@ -224,7 +224,7 @@
             this.NombreTextBox.Location = new System.Drawing.Point(105, 23);
             this.NombreTextBox.Name = "NombreTextBox";
             this.NombreTextBox.Size = new System.Drawing.Size(232, 22);
-            this.NombreTextBox.TabIndex = 23;
+            this.NombreTextBox.TabIndex = 10;
             // 
             // CedulaMaskedTextBox
             // 
@@ -232,7 +232,7 @@
             this.CedulaMaskedTextBox.Mask = "999-9999999-9";
             this.CedulaMaskedTextBox.Name = "CedulaMaskedTextBox";
             this.CedulaMaskedTextBox.Size = new System.Drawing.Size(83, 20);
-            this.CedulaMaskedTextBox.TabIndex = 44;
+            this.CedulaMaskedTextBox.TabIndex = 40;
             // 
             // CelularMaskedTextBox
             // 
@@ -240,7 +240,7 @@
             this.CelularMaskedTextBox.Mask = "999-999-9999";
             this.CelularMaskedTextBox.Name = "CelularMaskedTextBox";
             this.CelularMaskedTextBox.Size = new System.Drawing.Size(83, 20);
-            this.CelularMaskedTextBox.TabIndex = 45;
+            this.CelularMaskedTextBox.TabIndex = 20;
             // 
             // FechaRegistroLabel
             // 
@@ -260,7 +260,7 @@
             this.FechaRegistroDateTimePicker.Location = new System.Drawing.Point(140, 18);
             this.FechaRegistroDateTimePicker.Name = "FechaRegistroDateTimePicker";
             this.FechaRegistroDateTimePicker.Size = new System.Drawing.Size(87, 22);
-            this.FechaRegistroDateTimePicker.TabIndex = 47;
+            this.FechaRegistroDateTimePicker.TabIndex = 50;
             // 
             // FechaInicioDateTimePicker
             // 
@@ -270,7 +270,7 @@
             this.FechaInicioDateTimePicker.Location = new System.Drawing.Point(140, 53);
             this.FechaInicioDateTimePicker.Name = "FechaInicioDateTimePicker";
             this.FechaInicioDateTimePicker.Size = new System.Drawing.Size(87, 22);
-            this.FechaInicioDateTimePicker.TabIndex = 49;
+            this.FechaInicioDateTimePicker.TabIndex = 70;
             this.FechaInicioDateTimePicker.ValueChanged += new System.EventHandler(this.FechaInicioDateTimePicker_ValueChanged);
             // 
             // FechaInicioLabel
@@ -292,7 +292,7 @@
             this.FechaEntregaDateTimePicker.Location = new System.Drawing.Point(380, 53);
             this.FechaEntregaDateTimePicker.Name = "FechaEntregaDateTimePicker";
             this.FechaEntregaDateTimePicker.Size = new System.Drawing.Size(87, 22);
-            this.FechaEntregaDateTimePicker.TabIndex = 51;
+            this.FechaEntregaDateTimePicker.TabIndex = 80;
             // 
             // FechaEntregaLlabel
             // 
@@ -317,7 +317,7 @@
             0});
             this.TotalNumericUpDown.Name = "TotalNumericUpDown";
             this.TotalNumericUpDown.Size = new System.Drawing.Size(177, 22);
-            this.TotalNumericUpDown.TabIndex = 53;
+            this.TotalNumericUpDown.TabIndex = 150;
             // 
             // Totallabel
             // 
@@ -335,7 +335,7 @@
             this.SeleccionarButton.Location = new System.Drawing.Point(303, 85);
             this.SeleccionarButton.Name = "SeleccionarButton";
             this.SeleccionarButton.Size = new System.Drawing.Size(164, 29);
-            this.SeleccionarButton.TabIndex = 54;
+            this.SeleccionarButton.TabIndex = 90;
             this.SeleccionarButton.Text = "Seleccionar vehiculo";
             this.SeleccionarButton.UseVisualStyleBackColor = true;
             this.SeleccionarButton.Click += new System.EventHandler(this.SeleccionarButton_Click);
@@ -364,7 +364,7 @@
             this.RentaGroupBox.Location = new System.Drawing.Point(20, 95);
             this.RentaGroupBox.Name = "RentaGroupBox";
             this.RentaGroupBox.Size = new System.Drawing.Size(478, 163);
-            this.RentaGroupBox.TabIndex = 55;
+            this.RentaGroupBox.TabIndex = 45;
             this.RentaGroupBox.TabStop = false;
             // 
             // rRentas
