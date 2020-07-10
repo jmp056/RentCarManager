@@ -78,7 +78,7 @@
             this.ConsultaGroupBox.Controls.Add(this.DesdeLabel);
             this.ConsultaGroupBox.Controls.Add(this.FiltroComboBox);
             this.ConsultaGroupBox.Controls.Add(this.FiltroLabel);
-            this.ConsultaGroupBox.Location = new System.Drawing.Point(5, 0);
+            this.ConsultaGroupBox.Location = new System.Drawing.Point(7, 0);
             this.ConsultaGroupBox.Name = "ConsultaGroupBox";
             this.ConsultaGroupBox.Size = new System.Drawing.Size(162, 285);
             this.ConsultaGroupBox.TabIndex = 3;

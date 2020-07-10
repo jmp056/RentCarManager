@@ -24,7 +24,7 @@ namespace RentCarManager.UI.Registros
             NombreTextBox.Text = string.Empty;
             CedulaMaskedTextBox.Text = string.Empty;
             DireccionTextBox.Text = string.Empty;
-            DireccionTextBox.Text = string.Empty;
+            CelularMaskedTextBox.Text = string.Empty;
             FechaRegistroDateTimePicker.Value = DateTime.Now;
             DiasNumericUpDown.Value = 0;
             FechaInicioDateTimePicker.Value = DateTime.Now;
@@ -33,7 +33,6 @@ namespace RentCarManager.UI.Registros
             Vehiculo = new Vehiculos();
             PrecioNumericUpDown.Value = 0;
             TotalNumericUpDown.Value = 0;
-            SeleccionarButton.Enabled = false;
         }
 
         private Rentas LlenaClase()  // Funcion encargada de llenar el objeto

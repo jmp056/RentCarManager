@@ -111,6 +111,7 @@ namespace RentCarManager.UI.Consultas
         private void cVehiculos_Activated(object sender, EventArgs e)
         {
             Texto();
+            FiltroComboBox.SelectedIndex = 0;
             Buscar();
         }
 

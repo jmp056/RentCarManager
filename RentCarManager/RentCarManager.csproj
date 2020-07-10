@@ -60,6 +60,7 @@
     <Compile Include="BLL\RepositorioBase.cs" />
     <Compile Include="DAL\Contexto.cs" />
     <Compile Include="Entidades\Rentas.cs" />
+    <Compile Include="Entidades\RentasConsulta.cs" />
     <Compile Include="Entidades\Vehiculos.cs" />
     <Compile Include="Entidades\VehiculosConsulta.cs" />
     <Compile Include="MainForm.cs">
