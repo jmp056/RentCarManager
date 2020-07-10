@@ -189,9 +189,15 @@ namespace RentCarManager.UI.Consultas
 
         private void button1_Click(object sender, EventArgs e)
         {
-            IdVehiculoSeleccionado = Convert.ToInt32(VehiculosDataGridView.CurrentRow.Cells["VehiculoId"].Value);
-            DialogResult = DialogResult.OK;
-            this.Close();
+            if (ListadoVehiculos.Count > 0)
+            {
+                if (VehiculosDataGridView.CurrentRow.Index >= 0)
+                {
+                    IdVehiculoSeleccionado = Convert.ToInt32(VehiculosDataGridView.CurrentRow.Cells["VehiculoId"].Value);
+                    DialogResult = DialogResult.OK;
+                    this.Close();
+                }
+            }
         }
     }
 }

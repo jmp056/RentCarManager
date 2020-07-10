@@ -14,7 +14,7 @@ namespace RentCarManager
 
         private void registroDeRentasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            rRentas rR = new rRentas();
+            rRentas rR = new rRentas(0);
             rR.ShowDialog();
         }
 

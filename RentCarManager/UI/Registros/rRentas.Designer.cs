@@ -28,8 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.AnoFabricacionNumericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.ModeloTextBox = new System.Windows.Forms.TextBox();
+            this.components = new System.ComponentModel.Container();
+            this.PrecioNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.VehiculoTextBox = new System.Windows.Forms.TextBox();
             this.DireccionTextBox = new System.Windows.Forms.TextBox();
             this.EliminarButton = new System.Windows.Forms.Button();
             this.GuardarButton = new System.Windows.Forms.Button();
@@ -46,7 +47,7 @@
             this.CedulaMaskedTextBox = new System.Windows.Forms.MaskedTextBox();
             this.CelularMaskedTextBox = new System.Windows.Forms.MaskedTextBox();
             this.FechaRegistroLabel = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.FechaRegistroDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.FechaInicioDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.FechaInicioLabel = new System.Windows.Forms.Label();
             this.FechaEntregaDateTimePicker = new System.Windows.Forms.DateTimePicker();
@@ -54,27 +55,41 @@
             this.TotalNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.Totallabel = new System.Windows.Forms.Label();
             this.SeleccionarButton = new System.Windows.Forms.Button();
-            this.EntregadoButton = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.AnoFabricacionNumericUpDown)).BeginInit();
+            this.MyErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.PrecioNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DiasNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TotalNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MyErrorProvider)).BeginInit();
             this.SuspendLayout();
             // 
-            // AnoFabricacionNumericUpDown
+            // PrecioNumericUpDown
             // 
-            this.AnoFabricacionNumericUpDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AnoFabricacionNumericUpDown.Location = new System.Drawing.Point(357, 218);
-            this.AnoFabricacionNumericUpDown.Name = "AnoFabricacionNumericUpDown";
-            this.AnoFabricacionNumericUpDown.Size = new System.Drawing.Size(120, 22);
-            this.AnoFabricacionNumericUpDown.TabIndex = 43;
+            this.PrecioNumericUpDown.DecimalPlaces = 2;
+            this.PrecioNumericUpDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PrecioNumericUpDown.Increment = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.PrecioNumericUpDown.Location = new System.Drawing.Point(357, 218);
+            this.PrecioNumericUpDown.Maximum = new decimal(new int[] {
+            -727379969,
+            232,
+            0,
+            0});
+            this.PrecioNumericUpDown.Name = "PrecioNumericUpDown";
+            this.PrecioNumericUpDown.Size = new System.Drawing.Size(120, 22);
+            this.PrecioNumericUpDown.TabIndex = 43;
+            this.PrecioNumericUpDown.ValueChanged += new System.EventHandler(this.PrecioNumericUpDown_ValueChanged);
             // 
-            // ModeloTextBox
+            // VehiculoTextBox
             // 
-            this.ModeloTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ModeloTextBox.Location = new System.Drawing.Point(119, 215);
-            this.ModeloTextBox.Name = "ModeloTextBox";
-            this.ModeloTextBox.Size = new System.Drawing.Size(173, 22);
-            this.ModeloTextBox.TabIndex = 40;
+            this.VehiculoTextBox.Enabled = false;
+            this.VehiculoTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VehiculoTextBox.Location = new System.Drawing.Point(119, 215);
+            this.VehiculoTextBox.Name = "VehiculoTextBox";
+            this.VehiculoTextBox.Size = new System.Drawing.Size(173, 22);
+            this.VehiculoTextBox.TabIndex = 40;
             // 
             // DireccionTextBox
             // 
@@ -93,6 +108,7 @@
             this.EliminarButton.TabIndex = 36;
             this.EliminarButton.Text = "Eliminar";
             this.EliminarButton.UseVisualStyleBackColor = true;
+            this.EliminarButton.Click += new System.EventHandler(this.EliminarButton_Click);
             // 
             // GuardarButton
             // 
@@ -114,6 +130,7 @@
             this.LimpiarButton.TabIndex = 34;
             this.LimpiarButton.Text = "Limpiar";
             this.LimpiarButton.UseVisualStyleBackColor = true;
+            this.LimpiarButton.Click += new System.EventHandler(this.LimpiarButton_Click);
             // 
             // DiasLabel
             // 
@@ -189,9 +206,15 @@
             // 
             this.DiasNumericUpDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DiasNumericUpDown.Location = new System.Drawing.Point(328, 142);
+            this.DiasNumericUpDown.Maximum = new decimal(new int[] {
+            -727379969,
+            232,
+            0,
+            0});
             this.DiasNumericUpDown.Name = "DiasNumericUpDown";
             this.DiasNumericUpDown.Size = new System.Drawing.Size(120, 22);
             this.DiasNumericUpDown.TabIndex = 24;
+            this.DiasNumericUpDown.ValueChanged += new System.EventHandler(this.DiasNumericUpDown_ValueChanged);
             // 
             // NombreTextBox
             // 
@@ -204,6 +227,7 @@
             // CedulaMaskedTextBox
             // 
             this.CedulaMaskedTextBox.Location = new System.Drawing.Point(114, 66);
+            this.CedulaMaskedTextBox.Mask = "999-9999999-9";
             this.CedulaMaskedTextBox.Name = "CedulaMaskedTextBox";
             this.CedulaMaskedTextBox.Size = new System.Drawing.Size(100, 20);
             this.CedulaMaskedTextBox.TabIndex = 44;
@@ -211,6 +235,7 @@
             // CelularMaskedTextBox
             // 
             this.CelularMaskedTextBox.Location = new System.Drawing.Point(348, 36);
+            this.CelularMaskedTextBox.Mask = "999-999-9999";
             this.CelularMaskedTextBox.Name = "CelularMaskedTextBox";
             this.CelularMaskedTextBox.Size = new System.Drawing.Size(100, 20);
             this.CelularMaskedTextBox.TabIndex = 45;
@@ -225,15 +250,15 @@
             this.FechaRegistroLabel.TabIndex = 46;
             this.FechaRegistroLabel.Text = "Fecha de registro";
             // 
-            // dateTimePicker1
+            // FechaRegistroDateTimePicker
             // 
-            this.dateTimePicker1.CustomFormat = "dd/MM/yy";
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(158, 139);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(87, 22);
-            this.dateTimePicker1.TabIndex = 47;
+            this.FechaRegistroDateTimePicker.CustomFormat = "dd/MM/yy";
+            this.FechaRegistroDateTimePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FechaRegistroDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.FechaRegistroDateTimePicker.Location = new System.Drawing.Point(158, 139);
+            this.FechaRegistroDateTimePicker.Name = "FechaRegistroDateTimePicker";
+            this.FechaRegistroDateTimePicker.Size = new System.Drawing.Size(87, 22);
+            this.FechaRegistroDateTimePicker.TabIndex = 47;
             // 
             // FechaInicioDateTimePicker
             // 
@@ -244,6 +269,7 @@
             this.FechaInicioDateTimePicker.Name = "FechaInicioDateTimePicker";
             this.FechaInicioDateTimePicker.Size = new System.Drawing.Size(87, 22);
             this.FechaInicioDateTimePicker.TabIndex = 49;
+            this.FechaInicioDateTimePicker.ValueChanged += new System.EventHandler(this.FechaInicioDateTimePicker_ValueChanged);
             // 
             // FechaInicioLabel
             // 
@@ -258,6 +284,7 @@
             // FechaEntregaDateTimePicker
             // 
             this.FechaEntregaDateTimePicker.CustomFormat = "dd/MM/yy";
+            this.FechaEntregaDateTimePicker.Enabled = false;
             this.FechaEntregaDateTimePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FechaEntregaDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.FechaEntregaDateTimePicker.Location = new System.Drawing.Point(387, 187);
@@ -277,8 +304,14 @@
             // 
             // TotalNumericUpDown
             // 
+            this.TotalNumericUpDown.DecimalPlaces = 2;
             this.TotalNumericUpDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TotalNumericUpDown.Location = new System.Drawing.Point(97, 274);
+            this.TotalNumericUpDown.Maximum = new decimal(new int[] {
+            -727379969,
+            232,
+            0,
+            0});
             this.TotalNumericUpDown.Name = "TotalNumericUpDown";
             this.TotalNumericUpDown.Size = new System.Drawing.Size(120, 22);
             this.TotalNumericUpDown.TabIndex = 53;
@@ -301,23 +334,17 @@
             this.SeleccionarButton.Size = new System.Drawing.Size(42, 35);
             this.SeleccionarButton.TabIndex = 54;
             this.SeleccionarButton.UseVisualStyleBackColor = true;
+            this.SeleccionarButton.Click += new System.EventHandler(this.SeleccionarButton_Click);
             // 
-            // EntregadoButton
+            // MyErrorProvider
             // 
-            this.EntregadoButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EntregadoButton.Location = new System.Drawing.Point(269, 274);
-            this.EntregadoButton.Name = "EntregadoButton";
-            this.EntregadoButton.Size = new System.Drawing.Size(42, 35);
-            this.EntregadoButton.TabIndex = 55;
-            this.EntregadoButton.Text = "Vehiculo Entregado";
-            this.EntregadoButton.UseVisualStyleBackColor = true;
+            this.MyErrorProvider.ContainerControl = this;
             // 
             // rRentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(486, 402);
-            this.Controls.Add(this.EntregadoButton);
             this.Controls.Add(this.SeleccionarButton);
             this.Controls.Add(this.TotalNumericUpDown);
             this.Controls.Add(this.Totallabel);
@@ -325,12 +352,12 @@
             this.Controls.Add(this.FechaEntregaLlabel);
             this.Controls.Add(this.FechaInicioDateTimePicker);
             this.Controls.Add(this.FechaInicioLabel);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.FechaRegistroDateTimePicker);
             this.Controls.Add(this.FechaRegistroLabel);
             this.Controls.Add(this.CelularMaskedTextBox);
             this.Controls.Add(this.CedulaMaskedTextBox);
-            this.Controls.Add(this.AnoFabricacionNumericUpDown);
-            this.Controls.Add(this.ModeloTextBox);
+            this.Controls.Add(this.PrecioNumericUpDown);
+            this.Controls.Add(this.VehiculoTextBox);
             this.Controls.Add(this.DireccionTextBox);
             this.Controls.Add(this.EliminarButton);
             this.Controls.Add(this.GuardarButton);
@@ -346,9 +373,11 @@
             this.Controls.Add(this.NombreTextBox);
             this.Name = "rRentas";
             this.Text = "rRentas";
-            ((System.ComponentModel.ISupportInitialize)(this.AnoFabricacionNumericUpDown)).EndInit();
+            this.Load += new System.EventHandler(this.rRentas_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.PrecioNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DiasNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TotalNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MyErrorProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -356,8 +385,8 @@
 
         #endregion
 
-        private System.Windows.Forms.NumericUpDown AnoFabricacionNumericUpDown;
-        private System.Windows.Forms.TextBox ModeloTextBox;
+        private System.Windows.Forms.NumericUpDown PrecioNumericUpDown;
+        private System.Windows.Forms.TextBox VehiculoTextBox;
         private System.Windows.Forms.TextBox DireccionTextBox;
         private System.Windows.Forms.Button EliminarButton;
         private System.Windows.Forms.Button GuardarButton;
@@ -374,7 +403,7 @@
         private System.Windows.Forms.MaskedTextBox CedulaMaskedTextBox;
         private System.Windows.Forms.MaskedTextBox CelularMaskedTextBox;
         private System.Windows.Forms.Label FechaRegistroLabel;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker FechaRegistroDateTimePicker;
         private System.Windows.Forms.DateTimePicker FechaInicioDateTimePicker;
         private System.Windows.Forms.Label FechaInicioLabel;
         private System.Windows.Forms.DateTimePicker FechaEntregaDateTimePicker;
@@ -382,6 +411,6 @@
         private System.Windows.Forms.NumericUpDown TotalNumericUpDown;
         private System.Windows.Forms.Label Totallabel;
         private System.Windows.Forms.Button SeleccionarButton;
-        private System.Windows.Forms.Button EntregadoButton;
+        private System.Windows.Forms.ErrorProvider MyErrorProvider;
     }
 }
